@@ -14,6 +14,7 @@ html {
 body {
     /* background-color: rgb(26, 55, 77); */
     background: rgb(219, 226, 239);
+    max-width: 100%;
     color: black;
     overflow-x: hidden;
 }
@@ -23,23 +24,33 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: rgba(209, 209, 209, 0);
+    background-color: rgb(112, 121, 148);
     height: 100px;
     z-index: 2;
 }
 
 #navbar a {
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    min-width: 50px;
     width: 100px;
     height: 50px;
     text-decoration: none;
-    /* background-color: lightblue; */
-    background-color: rgba(0, 0, 0, 0.151);
     color: black;
     border-radius: 100px;
     margin: 0 25px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#navbar a:hover {
+    /* background-color: lightblue; */
+    background-color: rgba(116, 140, 184, 0.527);
+    
 }
 
 .title {
@@ -232,6 +243,7 @@ body {
     width: 100vw;
     max-width: 350px;
     min-height: 500px;
+    font-family: 'PT Sans Narrow', sans-serif;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +254,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.project:hover {
+    animation: hover 0.4s ease-in infinite alternate;
+    cursor: pointer;
 }
 
 .project-wrapper {
@@ -258,6 +276,15 @@ body {
     font-weight: bold;
     font-style: italic;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#pacman-title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#babo-title {
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .picture {
@@ -308,17 +335,18 @@ body {
 
 #cs50 {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) 90%, rgb(0, 0, 0) 100%), url("/images/investing-background.jpg"); */
-    background: linear-gradient(rgb(168, 167, 167), rgb(236, 234, 234));
+    background: linear-gradient(rgb(66, 65, 65),#999696);
 }
 
 #pacman {
     /* background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5) 10%,rgba(0, 0, 0, 0.5) 90%, rgba(50, 57, 128, 0.692) 100%), url("/images/pacman-background2.jpg"); */
-    background: linear-gradient(rgb(41, 79, 247), white);
+    background: linear-gradient(#0f0c29, #302b63, #24243e);
+    color: white;
 }
 
 #icebabo {
     /* background: linear-gradient(rgba(50, 57, 128, 0.781),rgba(0, 0, 0, 0.5)10%,rgba(0, 0, 0, 0.5)), url("/images/icebabo-background3.jpg"); */
-    background: linear-gradient(rgb(159, 186, 240), rgb(236, 234, 234));
+    background: linear-gradient(rgb(221, 241, 240), rgb(159, 199, 198));
 }
 
 #education-title {
@@ -439,13 +467,33 @@ button {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    #navbar a {
+        font-size: 0.7rem;
+    }
+
+    #name h1 {
+        font-size: 3rem;
+    }
+    
+    #name h2 {
+        font-size: 0.8rem;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+    #name h1 {
+        font-size: 4rem;
+    }
+    
+    #name h2 {
+        font-size: 0.9rem;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
@@ -494,5 +542,13 @@ button {
         opacity: 1;
     } to {
         opacity: 0;
+    }
+}
+
+@keyframes hover {
+    from {
+        transform: translateY(0px);
+    } to {
+        transform: translateY(-20px);
     }
 }
