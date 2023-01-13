@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    
+    <div id="navbar">
+        <a href="#skills-title">Skills</a>
+        <a href="#projects-section-title">Projects</a>
+        <a href="#education-title">Education</a>
+        <a href="#contact-title">Contact Me</a>
+        
+    </div>
+
+
+    <div id="introduction">
+        <div id="screen-wrapper">
+            <img src="/images/screen.png" id="monitor" alt="Monitor">
+            <div id="screen">
+                <div id="name">
+                    <h1>Andy Zhou</h1>
+                    <h2>Third Year Queens University Student</h2>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="title fade-up" id="skills-title">Skills and Experiences</div>
+
+    <div id="skills">
+        <div id="slider-wrapper">
+            <div class="slider">
+                <span id="languages">Languages</span>
+                <span class="skill" id="c" style="--i:1"><img src="/images/icons8-c-programming-100.png" alt=""></span>
+                <span class="skill" style="--i:2"><img src="/images/icons8-python-100.png" alt=""></span>
+                <span class="skill" style="--i:3"><img src="/images/icons8-java-100.png" alt=""></span>
+                <span class="skill" style="--i:4"><img src="/images/icons8-javascript-100.png" alt=""></span>
+                <span class="skill" style="--i:5"><img src="/images/icons8-html-5-100.png" alt=""></span>
+                <span class="skill" style="--i:6"><img src="/images/icons8-css3-100.png" alt=""></span>
+                <span class="skill" style="--i:7"><img src="/images/icons8-linux-100.png" alt=""></span>
+                <span class="skill" style="--i:8"><img src="/images/icons8-sql-100.png" alt=""></span>
+                <span class="skill" style="--i:9"><img src="/images/icons8-bootstrap-100.png" alt=""></span>
+            </div>
+        </div>
+
+        <div id="skills-info">
+            An evergrowing arsenal of programming languages and frameworks 
+        </div>
+    </div>
+
+    <div class="title fade-up" id="projects-section-title">Projects</div>
+
+    <div id="projects">
+        <div class="project-wrapper slide-left">
+            <div class="project-title">
+                Investing Web App
+            </div>
+
+            
+            <div class="project" id="cs50">
+                <div class="picture"><img src="/images/investing.JPG" alt=""></div>
+                <div class="languages-used">
+                    <!-- <div>Languages</div> -->
+                    <img src="/images/icons8-python-100.png" alt="python">
+                    <img src="/images/icons8-html-5-100.png" alt="html">
+                    <img src="/images/icons8-css3-100.png" alt="css">
+                    <img src="/images/icons8-sql-100.png" alt="sql">
+                </div>
+
+                <div class="project-info">
+                    An interactive website that was done in the CS50x Harvard course. Allows users register, login, change their password, "buy" and "sell" stocks, search up pricing of stocks, and the history of transactions made. 
+                </div>
+            </div> 
+        </div>
+
+        <div class="project-wrapper">
+            <div class="project-title">
+                Pacman Game
+            </div>
+
+            <div class="project" id="pacman">
+                <div class="picture"><img id="pacman-picture" src="/images/pacman-background2.jpg" alt=""></div>
+                <div class="languages-used">
+                    <!-- <div>Languages</div> -->
+                    <img src="/images/icons8-java-100.png" alt="java">
+                </div>
+
+                <div class="project-info">
+                    A simple and beautiful Pacman game made from strictly only Java! Includes music, a score, and two lives for a quick and fun game!
+                </div>
+            </div> 
+        </div>
+
+        <div class="project-wrapper slide-right">
+            <div class="project-title">
+                Responsive Website
+            </div>
+
+            <div class="project" id="icebabo">
+                <div class="picture"><img src="/images/icebabo.JPG" alt="icebabo"></div>
+                <div class="languages-used">
+                    <!-- <div>Languages</div> -->
+                    <img src="/images/icons8-html-5-100.png" alt="html">
+                    <img src="/images/icons8-css3-100.png" alt="css">
+                    <img src="/images/icons8-javascript-100.png" alt="javascript">
+                </div>
+
+                <div class="project-info">
+                    Well designed responsive and user experienced focused website for one of my favorite boba tea places in my home town!
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="title fade-up" id="education-title">Education</div>
+
+    <div id="education">
+        <div class="school slide-left" id="queens">
+            <img src="/images/queens-logo.png" id="queens-logo" alt="queens">
+            <div class="school-info">
+                <p>4.1 GPA</p>
+                <p>Third Year Computer Science Student</p>
+                <p>Class of 2024</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="school slide-right" id="waterloo">
+            <div class="school-info">
+                <p>85% Cumalative Average</p>
+                <p>Completed A Year of Math Program</p>
+            </div>
+            <img src="/images/waterloo-logo.png" alt="waterloo">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="school slide-left">
+            <img src="/images/jcr-logo.png" alt="jcr">
+            <div class="school-info">
+                <p>96% Cumalative Average</p>
+                <p>Graduated with Honor of Distinction</p>
+                <p>Class of 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="title fade-up" id="contact-title">Contact Me</div>
+
+    <div id="contact-me">
+        <form id="form" action="https://formsubmit.co/ayzh16@hotmail.com" method="POST">
+            <div>Email Me</div>
+            <input type="text" id="subject-name" placeholder="Your Name">
+            <input type="email" id="subject-email" placeholder="Email">
+            <input type="text" id="subject-phone" placeholder="Phone Number">
+            <textarea name="message" id="" cols="40" rows="10" placeholder="Type Here..."></textarea>
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
+</body>
+
+
+</html>
